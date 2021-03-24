@@ -23,4 +23,6 @@ object Collections_List extends App {
   println("empty List", empty)
   println("dim List", dim)
 
+  
+
 }

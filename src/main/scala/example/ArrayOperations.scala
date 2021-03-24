@@ -33,5 +33,32 @@ object ArrayOperations extends App {
     }
     println(max)
   }
+
+  val myArray:Array[Int]=new Array[Int](4)
+  myArray(0)=20
+  myArray(1)=50
+  myArray(2)=10
+  myArray(3)=30
+
+  for(x <- myArray){
+    println("My Array",x)
+  }
+
+  // or
+
+  for(i <- 0 to (myArray.length - 1)) {
+    println(myArray(i))
+  }
+
+  val myArray3=Array(1,2,3,4,5)
+  var result=Array.concat(myArray, myArray3)
+  println(result);
+  for(r<-result) {
+    println(r)
+  }
+//  val myArray2=new Array[Boolean](5)
+//  for(m<-myArray2) {
+//    println("Scond Array",m)
+//  }
 }
 
